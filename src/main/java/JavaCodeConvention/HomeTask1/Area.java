@@ -2,17 +2,17 @@ package JavaCodeConvention.HomeTask1;
 
 public class Area extends Shape {
     @Override
-    Integer rectangleArea(final Integer sideN, final Integer sideS) {
+    Integer rectangleArea(Integer sideN, Integer sideS) {
         return sideN*sideS;
     }
 
     @Override
-    Integer squareArea(final Integer sideN) {
+    Integer squareArea(Integer sideN) {
         return sideN*sideN;
     }
 
     @Override
-    Double circleArea(final Integer circleR) {
+    Double circleArea(Integer circleR) {
         return 3.14*(circleR*circleR);
     }
 
