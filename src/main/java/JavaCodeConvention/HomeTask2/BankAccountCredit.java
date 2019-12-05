@@ -12,8 +12,8 @@ package JavaCodeConvention.HomeTask2;
 class BankAccountCredit extends BankAccount {
 
 
-    BankAccountCredit(String accountname){
-        super(accountname);
+    BankAccountCredit(String accountName){
+        super(accountName);
     }
 
     @Override
@@ -25,32 +25,29 @@ class BankAccountCredit extends BankAccount {
 
 
     @Override
-    String withdraw(Double ammountMoney) {
+    String withdraw(Double amountMoney) {
         accountLimit = 1000;
-        if (ammountMoney<accountMoney && ammountMoney<=accountLimit) {
-            accountMoney  = accountMoney - ammountMoney;
-            checkForMoney.objectWithdrawMoney(ammountMoney.toString());
-            return ammountMoney.toString();
+        if (amountMoney<accountMoney && amountMoney<=accountLimit) {
+            accountMoney  = accountMoney - amountMoney;
+            checkForMoney.objectWithdrawMoney(amountMoney.toString());
+            return amountMoney.toString();
         }
-        if (ammountMoney>accountMoney){
+        if (amountMoney>accountMoney){
             checkForMoney.objectWithdrawMoney("not money");
             return "Not enough money";
         }
-        if (ammountMoney>accountLimit){
+        if (amountMoney>accountLimit){
             checkForMoney.objectWithdrawMoney("Limit");
             return "Limit for this type of account";
         }
         return "test";
-
-        }
+    }
 
     @Override
     public Double calculatePaymentFee(Double withdraw){
         accountFee = 0.005;
         return withdraw*accountFee;
     }
-
-
 }
 
 

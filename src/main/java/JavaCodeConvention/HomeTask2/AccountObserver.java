@@ -11,8 +11,6 @@ public class AccountObserver implements Observer {
     private File log;
     private BufferedWriter writer;
 
-
-
     public AccountObserver(String fileName) {
         logFileCreation(fileName);
            }
@@ -30,8 +28,6 @@ public class AccountObserver implements Observer {
 
     private void logFileCreation(String fileName) {
         this.log = new File("C:\\My doc\\Authomation\\Grow\\" + fileName);
-         //newFile.createNewFile();
-
     }
 
     private void writeUsingFileWriter(String data){

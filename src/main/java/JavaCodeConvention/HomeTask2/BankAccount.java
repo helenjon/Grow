@@ -11,23 +11,23 @@ package JavaCodeConvention.HomeTask2;
 
 abstract class BankAccount {
 
-    private String accountname;
+    private String accountName;
     Double accountMoney = 0.0;
     Integer accountLimit;
     Double accountFee;
     Observer checkForMoney;
 
 
-    public BankAccount(String accountname) {
-        this.accountname =  accountname+".txt";
-        checkForMoney = new AccountObserver(this.accountname);
+    public BankAccount(String accountName) {
+        this.accountName =  accountName+".txt";
+        checkForMoney = new AccountObserver(this.accountName);
     }
 
 
     abstract Double addMoney(Double money);
 
 
-    abstract String withdraw(Double ammountmoney);
+    abstract String withdraw(Double amountMoney);
 
     public Double calculatePaymentFee(Double withdraw){
         return withdraw*accountFee;
