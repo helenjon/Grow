@@ -11,19 +11,24 @@ public class AccountObserver implements Observer {
     private File log;
     private BufferedWriter writer;
 
-    public AccountObserver(String fileName) {
+    AccountObserver(String fileName) {
         logFileCreation(fileName);
            }
 
     @Override
     public void objectAddMoney(String data) {
-        writeUsingFileWriter("money was added to " + data);
+        writeUsingFileWriter("money was added to account" + data);
     }
 
     @Override
     public void objectWithdrawMoney(String data) {
         writeUsingFileWriter("objectWithdrawMoney " + data);
 
+    }
+
+    @Override
+    public void  excepionInfo(String e){
+        writeUsingFileWriter(e);
     }
 
     private void logFileCreation(String fileName) {
@@ -38,7 +43,7 @@ public class AccountObserver implements Observer {
             writer.close();
         }
         catch (IOException e) {
-            System.out.println("exception occoured" + e);
+            System.out.println("exception occoured " + e);
 
         }
     }

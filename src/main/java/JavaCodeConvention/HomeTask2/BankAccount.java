@@ -18,14 +18,14 @@ abstract class BankAccount {
     Observer checkForMoney;
 
 
-    public BankAccount(String accountName) {
+    BankAccount(String accountName) {
         this.accountName =  accountName+".txt";
+        // create observer for account
         checkForMoney = new AccountObserver(this.accountName);
     }
 
 
     abstract Double addMoney(Double money);
-
 
     abstract String withdraw(Double amountMoney);
 

@@ -8,9 +8,17 @@ public class BankAccountDebit extends BankAccount{
 
     @Override
     public Double addMoney(Double money){
-        accountMoney = accountMoney + money;
-        checkForMoney.objectAddMoney(accountMoney.toString());
-        return accountMoney;
+        TestException belowZero = new TestException();
+        try {
+            belowZero.testException(money);
+            accountMoney = accountMoney + money;
+            checkForMoney.objectAddMoney(accountMoney.toString());
+            return accountMoney;
+
+        } catch (MeException e) {
+            checkForMoney.excepionInfo(e.myFirstException());
+            return  accountMoney;
+        }
     }
 
 
@@ -23,12 +31,12 @@ public class BankAccountDebit extends BankAccount{
             return amountMoney.toString();
         }
         if (amountMoney>accountMoney){
-            checkForMoney.objectWithdrawMoney("not money");
-            return "Not enough money";
+            checkForMoney.objectWithdrawMoney("not enough money ");
+            return "Not enough money ";
         }
         if (amountMoney>accountLimit){
-            checkForMoney.objectWithdrawMoney("Limit");
-            return "Limit for this type of account";
+            checkForMoney.objectWithdrawMoney("Limit ");
+            return "Limit for this type of account ";
         }
         return "";
     }

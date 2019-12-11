@@ -6,5 +6,6 @@ public interface Observer {
 
     void objectAddMoney(String data) ;
     void objectWithdrawMoney(String data);
+    void excepionInfo(String e);
 
 }
