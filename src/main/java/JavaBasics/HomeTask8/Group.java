@@ -1,4 +1,4 @@
-package lesson6;
+package JavaBasics.HomeTask8;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,16 +8,16 @@ public class Group {
     private List<Student> group;
     Integer index;
 
-    public Group() {
+    Group() {
         this.group = new ArrayList<>();
     }
 
-    public void setStudents(Student name) {
+    void setStudents(Student name) {
 
         this.group.add(name);
     }
 
-    public Student getStudents(Integer index) {
+    Student getStudents(Integer index) {
 
         return this.group.get(index);
     }
@@ -28,7 +28,7 @@ public class Group {
 
     //средний балл учебной группы (использовать класс Group);
 
-    public Double groupRating() {
+    Double groupRating() {
         Double groupCount = 0.0;
         Double groupRating;
 
@@ -39,7 +39,7 @@ public class Group {
     }
 
     //    в) число отличников;
-    public Integer numberOfGoodStudent() {
+    Integer numberOfGoodStudent() {
 
         Integer numberOfGoodStudent = 0;
 
@@ -51,7 +51,7 @@ public class Group {
 
 
     //    г) количество студентов, имеющих "2"
-    public Integer numberOfBadStudent(){
+    Integer numberOfBadStudent(){
 
         Integer numberOfBadStudent = 0;
 

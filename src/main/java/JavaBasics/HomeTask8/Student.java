@@ -1,4 +1,4 @@
-package lesson6;
+package JavaBasics.HomeTask8;
 
 public class Student {
 
@@ -15,7 +15,7 @@ public class Student {
     private  String name;
     private  String surname;
 
-    public Student(String name, String surname, Integer rating1, Integer rating2, Integer rating3 ){
+    Student(String name, String surname, Integer rating1, Integer rating2, Integer rating3 ){
         this.name = name;
         this.surname = surname;
         this.rating1 = rating1;
@@ -35,7 +35,7 @@ public class Student {
         return rating3;
     }
 
-    public double getSumRating(){
+    double getSumRating(){
         return (this.rating1 + this.rating2 + this.rating3) /3.0;
     }
 
