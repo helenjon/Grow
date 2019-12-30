@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 // 6.Check that you have logged in
 // 7.Close the Browser
 
-public class hometask1 {
+public class SeleniumHomeTask1 {
 
     @Test
     public void homeTask1(){
@@ -28,8 +28,8 @@ public class hometask1 {
         WebElement email = driverChrome.findElement(By.id("email"));
         WebElement pass = driverChrome.findElement(By.id("pass"));
         email.clear(); pass.clear();
-        email.sendKeys("helena.mokina@gmail.com");
-        pass.sendKeys("Olga2020");
+        email.sendKeys("XXXX.WWWW@gmail.com");
+        pass.sendKeys("WWWWW");
         driverChrome.findElement(By.id("loginbutton")).click();
         String test = driverChrome.findElement(By.xpath("//a[@class='_5afe']")).getAttribute("title");
         // Login check
