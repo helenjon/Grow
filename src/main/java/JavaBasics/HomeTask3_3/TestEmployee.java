@@ -1,4 +1,4 @@
-package HomeTask3_3;
+package JavaBasics.HomeTask3_3;
 
 public class TestEmployee {
 

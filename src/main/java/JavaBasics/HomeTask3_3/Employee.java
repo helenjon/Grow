@@ -1,6 +1,4 @@
-package HomeTask3_3;
-
-import java.util.Random;
+package JavaBasics.HomeTask3_3;
 
 class Employee {
 //    "Create a class named Employee which is representing a company employee. The employee has a name, surname and ID.

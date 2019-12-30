@@ -1,4 +1,4 @@
-package HomeTask3_2;
+package JavaBasics.HomeTask3_2;
 
  class Accounting {
 
