@@ -18,9 +18,14 @@ class Employee {
         this.id = (int)(Math.random()*10000);
     }
 
-    Employee (){
+    Employee () {
+        id = (int)(Math.random()*10000);
+    }
+
+    Employee (int id) {
         this.id = (int)(Math.random()*10000);
     }
+
 
     void print(){
         System.out.println("Name  " + this.name);

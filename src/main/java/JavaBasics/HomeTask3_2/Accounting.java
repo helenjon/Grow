@@ -3,7 +3,7 @@ package JavaBasics.HomeTask3_2;
  class Accounting {
 
 
-    static Double pay (Integer hours, Double perHour){
+    static double pay (int hours, double perHour){
         return hours*perHour;
     }
 }
