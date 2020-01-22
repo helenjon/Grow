@@ -15,7 +15,7 @@ public class HomeTask5 {
 
     public static void main(String [] args) {
 
-        String s = "AaaaBB\\\\2";
+        String s = "AAAAaaaBBBBBB\\12";
         Integer counter = 0;
         String st = "";
         String rez = "";

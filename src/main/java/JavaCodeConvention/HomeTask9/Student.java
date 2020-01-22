@@ -13,36 +13,39 @@ public class Student implements UniversityStaff {
     private String facultyName;
 
 
-    @Override
-    public void addStaff(String firstName, String lastName, char sex, int age) {
+    public Student(final String firstName, final String lastName, final char sex, final int age) {
         this.firstName = firstName;
         this.lastName = lastName;
-        int idRandom = ((int)(Math.random()*10000));
-        String id = "S"+Integer.toString(idRandom);
         this.sex = sex;
         this.age = age;
+        int idRandom = ((int)(Math.random()*10000));
+        id = "S"+Integer.toString(idRandom);
     }
 
-
     @Override
-    public void removeStaff(String firstName, String lastName, String id) {
-
+    public void removeStaff() {
+            firstName = null;
+            lastName = null;
 
     }
 
 
     @Override
     public void setIncome(int income) {
+
         this.income = income;
     }
 
     @Override
-    public void setFaculty(final String facultyName) {
+    public void setFaculty(String facultyName) {
         this.facultyName = facultyName;
+
+
     }
 
 
     public void setGroup(String groupName) {
+
         this.groupName = groupName;
     }
 }

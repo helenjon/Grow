@@ -17,8 +17,10 @@ public class Teacher implements UniversityStaff {
     public void addStaff(String firstName, String lastName, char sex, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
+
         int idRandom = ((int)(Math.random()*10000));
         id = "T"+Integer.toString(idRandom);
+
         this.sex = sex;
         this.age = age;
 
@@ -32,7 +34,8 @@ public class Teacher implements UniversityStaff {
 
     @Override
     public void setIncome(int income) {
-            this.income = income*yearsOfWork;
+
+        this.income = income*yearsOfWork;
     }
 
 
