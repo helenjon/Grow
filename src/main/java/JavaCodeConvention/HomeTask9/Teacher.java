@@ -11,25 +11,20 @@ public class Teacher implements UniversityStaff {
     int income;
     String facultyName;
 
-
-
-    @Override
-    public void addStaff(String firstName, String lastName, char sex, int age) {
+    public Teacher(final String firstName, final String lastName, final char sex, final int age) {
         this.firstName = firstName;
         this.lastName = lastName;
-
+        this.sex = sex;
+        this.age = age;
         int idRandom = ((int)(Math.random()*10000));
         id = "T"+Integer.toString(idRandom);
 
-        this.sex = sex;
-        this.age = age;
-
     }
 
-
     @Override
-    public void removeStaff(String firstName, String lastName, String id) {
-
+    public void removeStaff() {
+          firstName = null;
+          lastName = null;
     }
 
     @Override
