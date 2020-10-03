@@ -2,10 +2,10 @@ package JavaCodeConvention.HomeTask8;
 
 public class Citizen {
 
-    private String series;
-    private Integer number;
+    String series;
+    String number;
 
-    public Citizen(String series, Integer number){
+    public Citizen(String series, String number){
         this.series = series;
         this.number = number;
 
