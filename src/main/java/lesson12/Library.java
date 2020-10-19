@@ -9,11 +9,11 @@ import java.util.Map;
 
 public class Library {
 
-    public static void main (String[] args)  {
+    public static void main(String[] args) {
 
         String name;
         String author;
-        Integer year ;
+        Integer year;
         String level;
         Integer id = 1;
         String fromFile;
@@ -22,7 +22,7 @@ public class Library {
         try {
 
             BufferedReader reader = new BufferedReader(new FileReader("C:\\My doc\\Idea_projects\\grow\\Lesson12_HT1.txt"));
-            while((fromFile = reader.readLine()) != null ) {
+            while ((fromFile = reader.readLine()) != null) {
                 if (!fromFile.isEmpty()) {
                     name = fromFile.split(",")[0];
                     author = fromFile.split(",")[1];
@@ -35,11 +35,11 @@ public class Library {
                     id = id + 1;
                 }
             }
-        } catch (IOException e){
-                e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
 
     }
-    }
+}
 
 
