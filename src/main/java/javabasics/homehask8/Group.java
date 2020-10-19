@@ -47,4 +47,5 @@ public class Group {
         }
         return numberOfBadStudent;
     }
+
 }
