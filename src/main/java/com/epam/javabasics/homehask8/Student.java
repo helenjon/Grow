@@ -38,11 +38,11 @@ public class Student {
         //    б) средний балл каждого студента;
         System.out.println("Midiane student rate = " + first.getStudents(2).getSumRating());
         //    а) средний балл учебной группы (использовать класс Group);
-        System.out.println("Midiane group rate = " + first.groupRating());
+        System.out.println("Midiane group rate = " + first.getgroupRating());
         // в) число отличников;
-        System.out.println("Number of good students = " + first.numberOfGoodStudent());
+        System.out.println("Number of good students = " + first.getnumberOfGoodStudent());
         // г) количество студентов, имеющих "2"
-        System.out.println("Number of good students = " + first.numberOfBadStudent());
+        System.out.println("Number of good students = " + first.getnumberOfBadStudent());
     }
 
     public Integer getRating1() {

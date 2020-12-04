@@ -24,7 +24,7 @@ public class Group {
     }
 
     //средний балл учебной группы (использовать класс Group);
-    Double groupRating() {
+    Double getgroupRating() {
         double groupCount = 0.0;
         double groupRating;
         for (Student student : this.group) groupCount = student.getSumRating() + groupCount;
@@ -32,7 +32,7 @@ public class Group {
         return groupRating;
     }
     //    в) число отличников;
-    Integer numberOfGoodStudent() {
+    Integer getnumberOfGoodStudent() {
         Integer numberOfGoodStudent = 0;
         for (Student student : this.group) {
             if (student.getSumRating() == 5.0) numberOfGoodStudent++;
@@ -40,7 +40,7 @@ public class Group {
         return numberOfGoodStudent;
     }
     //    г) количество студентов, имеющих "2"
-    Integer numberOfBadStudent() {
+    Integer getnumberOfBadStudent() {
         Integer numberOfBadStudent = 0;
         for (Student student : this.group) {
             if (student.getSumRating() < 3.0) numberOfBadStudent++;

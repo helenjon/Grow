@@ -6,6 +6,7 @@ public class TestEmployee {
 
         Employee alina = new Employee("Alina", "Surname1");
         Employee marina = new Employee();
+
         alina.print();
         marina.print();
     }

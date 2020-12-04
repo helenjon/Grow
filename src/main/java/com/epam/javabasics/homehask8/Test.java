@@ -21,7 +21,6 @@ public class Test {
         return sum / input.length;
     }
 
-
     public static double median(int[] input) {
         Arrays.sort(input);
         if (input.length % 2 != 0) return input[input.length / 2];
@@ -38,7 +37,6 @@ public class Test {
         for (int s : input) {
             if (Collections.frequency(asList, s) > count) {
                 count = Collections.frequency(asList, s);
-
             }
         }
         // rezMode set - in case there is more then 1 mode value;
@@ -50,7 +48,6 @@ public class Test {
         if (count == 1) return "no mode";
         else return Arrays.toString(rezMode.toArray());
     }
-
 
     public static double countStandardDeviation(int[] input) {
         //calculate mean of array.

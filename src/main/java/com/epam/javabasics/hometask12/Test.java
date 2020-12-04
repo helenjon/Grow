@@ -9,7 +9,6 @@ public class Test {
     static final Map<Integer, String> Maptest = new HashMap<>();
 
     static {
-
         Maptest.put(0, "ноль");
         Maptest.put(1, "one");
         Maptest.put(2, "two");
@@ -28,14 +27,14 @@ public class Test {
 
     public static void main(String[] args) {
 
-        String testt = "Это стоит 1 бакс, а вот это - 12 .";
-        String[] line = testt.split(" ");
+        String test = "Это стоит 1 бакс, а вот это - 12 .";
+        String[] line = test.split(" ");
 
-        for (String ll : line) {
-            if (ll.matches("\\d+")) {
-                System.out.println(ll);
-                if (Maptest.containsKey(Integer.valueOf(ll))) ll = Maptest.get(Integer.valueOf(ll));
-                System.out.println(ll);
+        for (String stringLine : line) {
+            if (stringLine.matches("\\d+")) {
+                System.out.println(stringLine);
+                if (Maptest.containsKey(Integer.valueOf(stringLine))) stringLine = Maptest.get(Integer.valueOf(stringLine));
+                System.out.println(stringLine);
             }
 
         }

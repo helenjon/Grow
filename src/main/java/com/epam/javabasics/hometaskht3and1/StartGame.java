@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-
 public class StartGame {
 
     private final ArrayList<Player> players = new ArrayList<>();
@@ -14,8 +13,7 @@ public class StartGame {
 
     public StartGame() {
         System.out.println("Start game y/n?");
-        BufferedReader reader =
-                new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String answer = null;
         try {
            answer = reader.readLine();
